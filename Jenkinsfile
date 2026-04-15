@@ -2,9 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello World') {
+        stage('Checkout') {
             steps {
-                echo '🚀 Jenkins is working!'
+                echo 'Checking out source...'
+            }
+        }
+
+        stage('Docker Version') {
+            steps {
+                sh 'docker version'
             }
         }
     }
