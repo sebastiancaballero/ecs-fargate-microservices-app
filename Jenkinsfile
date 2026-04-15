@@ -16,7 +16,7 @@ pipeline {
         stage('Build Frontend Image') {
             steps {
                 sh '''
-                docker build -t $FRONTEND_IMAGE ./app-frontend
+                docker build -t $FRONTEND_IMAGE ./frontend
                 '''
             }
         }
@@ -24,7 +24,7 @@ pipeline {
         stage('Build Backend Image') {
             steps {
                 sh '''
-                docker build -t $BACKEND_IMAGE ./app-backend
+                docker build -t $BACKEND_IMAGE ./backend
                 '''
             }
         }
