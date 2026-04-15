@@ -11,6 +11,10 @@ pipeline {
         FRONTEND_REPO   = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/app-frontend"
         BACKEND_REPO    = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/app-backend"
         IMAGE_TAG       = "latest"
+
+        ECS_CLUSTER     = "app-cluster"
+        FRONTEND_SERVICE = "app-frontend-service"
+        BACKEND_SERVICE  = "app-backend-service"
     }
 
     stages {
@@ -66,6 +70,30 @@ pipeline {
             steps {
                 sh '''
                 docker push $BACKEND_REPO:$IMAGE_TAG
+                '''
+            }
+        }
+
+        stage('Deploy Frontend Service') {
+            steps {
+                sh '''
+                aws ecs update-service \
+                  --cluster $ECS_CLUSTER \
+                  --service $FRONTEND_SERVICE \
+                  --force-new-deployment \
+                  --region $AWS_REGION
+                '''
+            }
+        }
+
+        stage('Deploy Backend Service') {
+            steps {
+                sh '''
+                aws ecs update-service \
+                  --cluster $ECS_CLUSTER \
+                  --service $BACKEND_SERVICE \
+                  --force-new-deployment \
+                  --region $AWS_REGION
                 '''
             }
         }
