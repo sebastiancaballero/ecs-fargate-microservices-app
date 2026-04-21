@@ -110,3 +110,38 @@ Containerize the frontend and backend applications and validate container-to-con
 
 ### ✅ Result
 Built Docker images for both frontend and backend services, ran them as containers locally, and verified successful communication between services via exposed ports.
+---
+
+## 🏗️ Phase 3: Infrastructure Provisioning (Terraform)
+
+### 🎯 Goal
+Provision AWS infrastructure for container deployment using Terraform and validate that the core ECS Fargate resources were created successfully.
+
+### 📸 Proof
+
+#### Terraform Project Structure
+![Terraform Structure](phase3_terraform_structure.png)
+
+#### Terraform Module Wiring in `main.tf`
+![Module Wiring](phase3_module_wiring_main_tf.png)
+
+#### Successful Terraform Apply
+![Terraform Apply Success](phase3_terraform_apply_success.png)
+
+#### ECS Cluster Created
+![ECS Cluster Created](phase3_ecs_cluster_created.png)
+
+#### ECS Services Created
+![ECS Services Created](phase3_ecs_services_created.png)
+
+#### Application Load Balancer Created
+![Load Balancer Created](phase3_load_balancer_created.png)
+
+#### ECS Tasks Running
+![Running Tasks](phase3_running_tasks.png)
+
+#### Service Scaling Configuration
+![Service Scaling Config](phase3_service_scaling_config.png)
+
+### ✅ Result
+Provisioned AWS infrastructure with Terraform, created the ECS cluster, services, load balancer, and scaling configuration, and verified that application tasks were running successfully in the target environment.
