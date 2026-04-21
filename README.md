@@ -109,4 +109,4 @@ Containerize the frontend and backend applications and validate container-to-con
 ![Frontend Container Working](phase2_containerized_frontend_working.png)
 
 ### ✅ Result
-Both frontend and backend applications were successfully containerized, built into Docker images, and verified to communicate correctly in a local containerized environment.
+Built Docker images for both frontend and backend services, ran them as containers locally, and verified successful communication between services via exposed ports.
