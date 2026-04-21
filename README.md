@@ -81,3 +81,32 @@ This reduces:
 - Push images to Amazon ECR
 - Deploy using ECS Fargate
 - Implement CI/CD pipeline with Jenkins
+---
+
+## 📦 Phase 2: Containerization & Local Testing
+
+### 🎯 Goal
+Containerize the frontend and backend applications and validate container-to-container communication.
+
+### 📸 Proof
+
+#### Backend Docker Image Build
+![Backend Build](backend_build.png)
+
+#### Frontend Docker Image Build
+![Frontend Build](frontend_build.png)
+
+#### Backend Dockerfile
+![Backend Dockerfile](phase2_backend_dockerfile.png)
+
+#### Frontend Dockerfile
+![Frontend Dockerfile](phase2_frontend_dockerfile.png)
+
+#### Containers Running Locally
+![Containers Running](phase2_containers_running.png)
+
+#### Containerized Frontend Successfully Communicating with Backend
+![Frontend Container Working](phase2_containerized_frontend_working.png)
+
+### ✅ Result
+Both frontend and backend applications were successfully containerized, built into Docker images, and verified to communicate correctly in a local containerized environment.
