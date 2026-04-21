@@ -145,3 +145,38 @@ Provision AWS infrastructure for container deployment using Terraform and valida
 
 ### ✅ Result
 Provisioned AWS infrastructure with Terraform, created the ECS cluster, services, load balancer, and scaling configuration, and verified that application tasks were running successfully in the target environment.
+---
+
+## 🔁 Phase 4: CI/CD Pipeline Setup (Jenkins)
+
+### 🎯 Goal
+Set up a Jenkins server on AWS EC2 and configure a CI/CD pipeline to automate build and deployment processes.
+
+### 📸 Proof
+
+#### Jenkins EC2 Instance Running
+![Jenkins EC2 Running](phase4_jenkins_ec2_running.png)
+
+#### Jenkins Initial Unlock Screen
+![Jenkins Unlock](phase4_jenkins_unlock_screen.png)
+
+#### Jenkins EC2 Remote Access
+![Jenkins Remote Access](phase4_jenkins_ec2_remote_access.png)
+
+#### GitHub Repository Connected to Jenkins
+![GitHub Connection](phase4_github_connection.png)
+
+#### Jenkins Pipeline Stages
+![Pipeline Stages](phase4_pipeline_stages.png)
+
+#### Docker Build from Jenkins Pipeline
+![Docker Build](phase4_docker_build.png)
+
+#### ECS Deployment Update Triggered by Pipeline
+![ECS Deployment](phase4_ecs_deployment_update.png)
+
+#### ECS Tasks Running After Deployment
+![ECS Tasks Running](phase4_ecs_running_tasks.png)
+
+### ✅ Result
+Provisioned a Jenkins server on EC2, integrated it with the GitHub repository, and successfully implemented a CI/CD pipeline that builds Docker images and deploys updated services to ECS.
