@@ -17,8 +17,10 @@ The goal of this project is to simulate how real-world applications are:
 ---
 
 ## 🧱 Architecture (High-Level)
-> (Architecture diagram will go here)
 
+![Full Architecture Overview](full_architecture_overview.png)
+
+This project implements a full CI/CD-driven AWS deployment workflow for a frontend and backend application using Docker, Terraform, Jenkins, Amazon ECR, ECS Fargate, Application Load Balancer, and CloudWatch-based scaling.
 ---
 
 ## ⚙️ Tech Stack
