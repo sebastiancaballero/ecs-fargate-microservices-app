@@ -1,0 +1,74 @@
+# 🚀 ECS Fargate Microservices Application (Production-Style)
+
+## 📌 Overview
+This project demonstrates a **production-style microservices deployment on AWS** using:
+
+- ECS Fargate (serverless containers)
+- Application Load Balancer (ALB)
+- Terraform (Infrastructure as Code)
+- Jenkins (CI/CD pipeline)
+
+The goal of this project is to simulate how real-world applications are:
+- Built locally
+- Containerized
+- Deployed to the cloud
+- Scaled and automated
+
+---
+
+## 🧱 Architecture (High-Level)
+> (Architecture diagram will go here)
+
+---
+
+## ⚙️ Tech Stack
+
+- AWS ECS Fargate
+- Application Load Balancer (ALB)
+- Docker
+- Terraform
+- Jenkins
+- JavaScript (Frontend + Backend)
+
+---
+
+## 🧪 Phase 1: Local Setup & Validation
+
+### 🎯 Goal
+Verify the application works locally before containerization and deployment.
+
+### ✅ Steps Completed
+
+- Cloned application repository
+- Installed frontend and backend dependencies
+- Configured frontend to communicate with backend (`localhost:8080`)
+- Successfully ran backend service
+- Successfully ran frontend service
+
+### 📸 Proof
+
+> (Screenshots will go here)
+
+---
+
+## 💡 Why This Matters (Real-World Impact)
+
+Before deploying any application to production, engineers must:
+
+- Validate functionality locally
+- Ensure services communicate correctly
+- Catch issues early before cloud deployment
+
+This reduces:
+- Deployment failures
+- Debugging time in production
+- Infrastructure costs
+
+---
+
+## 🚧 Next Steps
+
+- Containerize application using Docker
+- Push images to Amazon ECR
+- Deploy using ECS Fargate
+- Implement CI/CD pipeline with Jenkins
