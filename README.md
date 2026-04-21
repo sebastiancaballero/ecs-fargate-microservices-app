@@ -18,7 +18,7 @@ The goal of this project is to simulate how real-world applications are:
 
 ## 🧱 Architecture (High-Level)
 
-![Full Architecture Overview](full_architecture_overview.png)
+![Full Architecture Overview](erasor_architecture_diagram.png)
 
 This project implements a full CI/CD-driven AWS deployment workflow for a frontend and backend application using Docker, Terraform, Jenkins, Amazon ECR, ECS Fargate, Application Load Balancer, and CloudWatch-based scaling.
 ---
