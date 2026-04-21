@@ -47,7 +47,14 @@ Verify the application works locally before containerization and deployment.
 
 ### 📸 Proof
 
-> (Screenshots will go here)
+#### Project Structure
+![Project Structure](phase1_repo_structure.png)
+
+#### Frontend Successfully Rendering Backend Data
+![Frontend Backend Success](frontend_backend_success.png)
+
+#### Backend API Responding Correctly
+![Backend API Response](backend_api_response.png)
 
 ---
 
