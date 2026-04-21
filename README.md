@@ -6,6 +6,9 @@ This project was designed to simulate a real-world production deployment, not ju
 
 The objective was to build a scalable, automated microservices system that reflects how modern cloud infrastructure is designed, deployed, and operated in a production environment.
 
+- **Evaluate migration to Kubernetes (EKS) with Horizontal Pod Autoscaler (HPA)**  
+  For more advanced orchestration and scaling control, a future version of this system could migrate to EKS and use Kubernetes HPA for pod-level autoscaling based on CPU, memory, or custom metrics.
+
 ---
 
 ## ⚙️ Key Design Decisions
