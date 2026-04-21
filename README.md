@@ -80,15 +80,19 @@ This architecture is designed to:
 
 ---
 
-## 🚀 Future Improvements
+### 🚀 Future Improvements
 
-- Implement **blue/green deployments** for zero-downtime releases  
-- Add **CloudWatch dashboards + alerts** for observability  
-- Introduce **API Gateway** for better traffic control  
-- Add **Redis caching layer** to reduce backend load  
-- Implement **retry logic + circuit breakers** for resilience  
-- Move CI/CD to a **fully managed solution (GitHub Actions / CodePipeline)**  
-- Expand to **multi-AZ / multi-region architecture**
+- **Blue/Green Deployments**  
+  Implement blue/green deployment strategy to eliminate downtime and reduce deployment risk during releases.
+
+- **AWS Secrets Manager Integration**  
+  Replace hardcoded or environment-based secrets with AWS Secrets Manager for improved security and centralized secret rotation.
+
+- **Cost Optimization Strategies**  
+  Introduce rightsizing, scaling thresholds tuning, and potential migration to mixed compute (Fargate + EC2) to reduce long-term infrastructure costs.
+
+- **Observability & Alerting**  
+  Implement CloudWatch dashboards, metrics, and alerts to monitor system health, detect failures early, and improve operational visibility.
 
 ---
 
