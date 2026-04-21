@@ -180,3 +180,28 @@ Set up a Jenkins server on AWS EC2 and configure a CI/CD pipeline to automate bu
 
 ### ✅ Result
 Provisioned a Jenkins server on EC2, integrated it with the GitHub repository, and successfully implemented a CI/CD pipeline that builds Docker images and deploys updated services to ECS.
+
+## ⚙️ Phase 5: CI/CD Pipeline (Jenkinsfile + Automated Deployment)
+
+### 📸 Proof
+
+#### Jenkinsfile Pipeline Code
+![Jenkinsfile Code](phase5_jenkinsfile_code.png)
+
+#### Pipeline from SCM Configuration
+![Pipeline SCM Config](phase5_pipeline_from_scm_config.png)
+
+#### Script Path Configuration
+![Script Path](phase5_script_path_pipeline_config.png)
+
+#### Pipeline Build History
+![Pipeline Build History](phase5_pipeline_build_history.png)
+
+#### Successful Pipeline Run
+![Successful Pipeline Run](phase5_successful_pipeline_run.png)
+
+#### ECS Deployment Success
+![ECS Deployment Success](phase5_ecs_deployment_success.png)
+
+#### ECS Deployment History
+![ECS Deployment History](phase5_ecs_deployment_history.png)
