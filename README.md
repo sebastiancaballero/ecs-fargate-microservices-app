@@ -155,7 +155,7 @@ Set up a Jenkins server on AWS EC2 and configure a CI/CD pipeline to automate bu
 ### 📸 Proof
 
 #### Jenkins EC2 Instance Running
-![Jenkins EC2 Running](phase4/jenkins_ec2_running.png)
+![Jenkins EC2 Running](phase4/phase4_jenkins_ec2_running.png)
 
 #### Jenkins Initial Unlock Screen
 ![Jenkins Unlock](phase4/jenkins_unlock_screen.png)
