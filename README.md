@@ -205,3 +205,30 @@ Provisioned a Jenkins server on EC2, integrated it with the GitHub repository, a
 
 #### ECS Deployment History
 ![ECS Deployment History](phase5_ecs_deployment_history.png)
+## 📈 Phase 6: Scaling, Monitoring & Full System Validation
+
+### 📸 Proof
+
+#### CPU Metrics Monitoring
+![CPU Metrics](phase5_cpu_metrics.png)
+
+#### Load Test Running
+![Load Test Running](phase6_5_load_test_running.png)
+
+#### Scaling Activity
+![Scaling Activity](phase6_5_scaling_activity.png)
+
+#### Auto Scaling Configuration
+![Auto Scaling Config](phase6_autoscaling_config.png)
+
+#### Backend API Response
+![Backend API Response](phase6_backend_api_response.png)
+
+#### Frontend Live Application
+![Frontend Live App](phase6_frontend_live_app.png)
+
+#### Full Stack Integration
+![Full Stack Integration](phase6_fullstack_integration.png)
+
+#### Final Pipeline Execution
+![Final Pipeline Execution](phase6_final_pipeline_execution.png)
