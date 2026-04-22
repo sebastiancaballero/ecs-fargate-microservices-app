@@ -1,3 +1,17 @@
+## 🧠 Case Study
+
+### Problem
+Many applications are deployed on fixed infrastructure, making them difficult to scale and maintain during traffic spikes.
+
+### Solution
+I built a containerized microservices application using Docker and deployed it on AWS using ECS Fargate. Infrastructure is provisioned with Terraform and deployments are automated using Jenkins.
+
+### Results
+- Successfully deployed a scalable microservices architecture
+- ECS service scaled under load
+- CI/CD pipeline automated deployments from code to production
+- Infrastructure is fully reproducible using Terraform
+
 ## 🧠 System Design & Engineering Thinking
 
 ### 🎯 Project Goal
