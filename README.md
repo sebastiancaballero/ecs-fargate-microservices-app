@@ -12,14 +12,6 @@ I built a containerized microservices application using Docker and deployed it o
 - CI/CD pipeline automated deployments from code to production
 - Infrastructure is fully reproducible using Terraform
 
-## 🧠 System Design & Engineering Thinking
-
-### 🎯 Project Goal
-
-This project was designed to simulate a real-world production deployment, not just demonstrate tool usage.
-
-The objective was to build a scalable, automated microservices system that reflects how modern cloud infrastructure is designed, deployed, and operated in a production environment.
-
 ---
 
 ## ⚙️ Key Design Decisions
