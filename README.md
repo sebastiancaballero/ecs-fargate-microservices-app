@@ -376,9 +376,12 @@ Provisioned a Jenkins server on EC2, integrated it with the GitHub repository, a
 #### End-to-End Integration
 ![Full Stack](phase6_fullstack_integration.png)
 
-### ✅ What This Demonstrates
-- Fully deployed microservices application on AWS ECS Fargate
-- Load balancer routing traffic to containerized services
-- CI/CD pipeline automating deployments
-- Application scaling under load
-- End-to-end system functionality (frontend → backend → infrastructure)
+---
+
+## 📊 Final Results (End-to-End System)
+
+- Successfully deployed a production-style microservices system on AWS ECS Fargate
+- CI/CD pipeline automatically builds and deploys new versions from GitHub commits
+- Application scaled from 1 → 2 tasks under load using CPU-based auto scaling
+- System remained available during scaling (no downtime)
+- Infrastructure fully reproducible using Terraform (Infrastructure as Code)
