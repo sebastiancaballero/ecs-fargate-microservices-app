@@ -332,6 +332,12 @@ Provisioned a Jenkins server on EC2, integrated it with the GitHub repository, a
 ![ECS Deployment History](phase5_ecs_deployment_history.png)
 ## 📈 Phase 6: Scaling, Monitoring & Full System Validation
 
+## 📈 Scaling Verification
+
+- ECS service scaled from 1 → 2 tasks under load
+- CPU-based auto scaling triggered successfully
+- Application remained available during scaling
+
 ### 📸 Proof
 
 #### CPU Metrics Monitoring
