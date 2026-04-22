@@ -14,8 +14,8 @@ I designed and deployed a fully automated, containerized microservices system us
 This system allows code changes to automatically trigger builds and deployments while the application scales based on demand.
 
 ### Results
-- Fully automated deployment pipeline from code commit → production  
-- ECS service scaled from 1 → 2 tasks under load  
+- Fully automated deployment pipeline from code commit to production  
+- ECS service scaled from 1 to 2 tasks under load  
 - No manual infrastructure management required  
 - Infrastructure reproducible using Terraform
 ---
@@ -26,7 +26,6 @@ This system allows code changes to automatically trigger builds and deployments 
 - Eliminates server management (no patching, scaling groups, or OS maintenance)
 - Allows focus on application and infrastructure design rather than instance management
 - Scales containers automatically based on demand
-- Better alignment with modern serverless/container-first architectures
 
 👉 Tradeoff:
 - Less control over underlying infrastructure
