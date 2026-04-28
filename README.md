@@ -1,148 +1,17 @@
-## 🧠 Case Study
+## ECS Fargate Microservices App – Automated Cloud Infrastructure
 
-### Problem
-A company needed a way to deploy applications quickly and reliably without relying on manual server setup or fixed infrastructure that struggles to scale during traffic spikes.
-
-### Solution
-I designed and deployed a fully automated, containerized microservices system using:
-
-- Docker for consistent application packaging  
-- ECS Fargate to eliminate server management  
-- Terraform to automate infrastructure provisioning  
-- Jenkins to automate CI/CD deployments  
-
-This system allows code changes to automatically trigger builds and deployments while the application scales based on demand.
-
-### Results
-- Fully automated deployment pipeline from code commit to production  
-- ECS service scaled from 1 to 2 tasks under load  
-- No manual infrastructure management required  
-- Infrastructure reproducible using Terraform
----
-
-## ⚙️ Key Design Decisions
-
-### Why ECS Fargate (instead of EC2)
-- Eliminates server management (no patching, scaling groups, or OS maintenance)
-- Allows focus on application and infrastructure design rather than instance management
-- Scales containers automatically based on demand
-
-👉 Tradeoff:
-- Less control over underlying infrastructure
-- Potentially higher cost at scale compared to EC2
-
----
-
-### Why Jenkins (instead of GitHub Actions)
-- Full control over pipeline configuration and execution
-- Simulates enterprise environments where Jenkins is still widely used
-- Allows deeper understanding of CI/CD internals
-
-👉 Tradeoff:
-- Requires infrastructure management (EC2 instance, setup, maintenance)
-- More complex than managed CI/CD solutions
-
----
-
-### Why Application Load Balancer (ALB)
-- Distributes traffic across containers for high availability
-- Enables dynamic routing to ECS services
-- Acts as a stable entry point for the system
-
-👉 Tradeoff:
-- Single entry point (can become a bottleneck if not designed with redundancy)
-
----
-
-## 📈 Business Impact
-
-This architecture is designed to:
-
-- **Reduce operational overhead**  
-  → No server management with Fargate
-
-- **Improve scalability**  
-  → Auto scaling responds to real-time demand
-
-- **Increase deployment speed**  
-  → CI/CD pipeline automates build and deployment
-
-- **Improve reliability**  
-  → Load balancing + container orchestration ensures service availability
-
----
-
-## ⚠️ What Would Break First (Production Reality)
-
-- **ALB as a single entry point**  
-  → Could become a bottleneck without multi-region setup
-
-- **No caching layer**  
-  → Backend could become overwhelmed under heavy read traffic
-
-- **Scaling delay**  
-  → ECS scaling is reactive, not instantaneous
-
-- **Jenkins dependency**  
-  → If Jenkins EC2 fails, deployments stop
-
-- **Limited observability**  
-  → No centralized logging/monitoring dashboards yet
-
----
-
-### 🚀 Future Improvements
-
-- **Blue/Green Deployments**  
-  Implement blue/green deployment strategy to eliminate downtime and reduce deployment risk during releases.
-
-- **AWS Secrets Manager Integration**  
-  Replace hardcoded or environment-based secrets with AWS Secrets Manager for improved security and centralized secret rotation.
-
-- **Cost Optimization Strategies**  
-  Introduce rightsizing, scaling thresholds tuning, and potential migration to mixed compute (Fargate + EC2) to reduce long-term infrastructure costs.
-
-- **Observability & Alerting**  
-  Implement CloudWatch dashboards, metrics, and alerts to monitor system health, detect failures early, and improve operational visibility.
-
-- **Evaluate migration to Kubernetes (EKS) with Horizontal Pod Autoscaler (HPA)**  
-  For more advanced orchestration and scaling control, a future version of this system could migrate to EKS and use Kubernetes HPA for pod-level autoscaling based on CPU, memory, or custom metrics.
-
----
-
-## 🧠 Engineering Mindset
-
-This project focuses on:
-
-- Designing systems, not just deploying them  
-- Understanding tradeoffs between tools and architectures  
-- Thinking in terms of scalability, reliability, and cost  
-- Validating real-world behavior through load testing and scaling  
-
-The goal is to demonstrate the ability to think and operate as a Cloud/DevOps Engineer in a production environment.
-# 🚀 ECS Fargate Microservices Application (Production-Style)
-
-## 📌 Overview
-This project demonstrates a **production-style microservices deployment on AWS** using:
-
-- ECS Fargate (serverless containers)
-- Application Load Balancer (ALB)
-- Terraform (Infrastructure as Code)
-- Jenkins (CI/CD pipeline)
-
-The goal of this project is to simulate how real-world applications are:
-- Built locally
-- Containerized
-- Deployed to the cloud
-- Scaled and automated
-
----
-
-## 🧱 Architecture (High-Level)
-
+# 🚀 Features 
+- Containerized microservices deployed on AWS ECS Fargate
+-  Application Load Balancer (ALB) for traffic distribution CI/CD pipeline (Jenkins) for automated builds and deployments
+-  Dockerized services for portability and consistency
+-  Infrastructure provisioned using Terraform
+-  Scalable architecture with ECS service
+-  auto-scaling Secure networking using VPC, subnets, and security groups
+--- 
+  
 ![Full Architecture Overview](erasor_architecture_diagram.png)
 
-This project implements a fully automated CI/CD pipeline for deploying a frontend and backend application on AWS using Docker, Terraform, Jenkins, Amazon ECR, ECS Fargate, Application Load Balancer, and CloudWatch-based scaling.
+Fully automated deployment of a production-style microservices application on AWS using Infrastructure as Code and CI/CD.
 ---
 
 ## ⚙️ Tech Stack
@@ -152,7 +21,6 @@ This project implements a fully automated CI/CD pipeline for deploying a fronten
 - Docker
 - Terraform
 - Jenkins
-- JavaScript (Frontend + Backend)
 
 ---
 
@@ -382,3 +250,19 @@ Provisioned a Jenkins server on EC2, integrated it with the GitHub repository, a
 - Application scaled from 1 → 2 tasks under load using CPU-based auto scaling
 - System remained available during scaling (no downtime)
 - Infrastructure fully reproducible using Terraform (Infrastructure as Code)
+
+---
+
+## 📸 Deployment Proof
+
+### ECS Running Tasks
+![ECS Tasks](screenshots/phase3_running_tasks.png)
+
+### Load Balancer
+![ALB](screenshots/phase3_load_balancer_created.png)
+
+### CI/CD Pipeline
+![Pipeline](screenshots/phase5_successful_pipeline_run.png)
+
+### Application Running
+![Frontend](screenshots/phase6_frontend_live_app.png)
