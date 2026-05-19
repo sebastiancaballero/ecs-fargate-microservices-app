@@ -19,7 +19,7 @@ GitHub → Jenkins → Docker → ECS Deploy
 Infrastructure:
 Terraform → Provisions VPC, ECS, ALB, IAM
   
-![Full Architecture Overview](erasor_architecture_diagram.png)
+![Full Architecture Overview](screenshots/erasor_architecture_diagram.png)
 
 ---
 
